@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: white;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.converter-card {
+    background: rgb(140, 121, 237);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/*Headings Styling*/
+h1 {
+    font-size: 60px;
+    color: rgb(140, 121, 237);
+    font-weight: bolder;
+    padding-top: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    color: #666666;
+    font-weight: lighter;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.input-group, .select-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus, select:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+select option {
+    background: rgb(140, 121, 237);
+    color: white;
+}
+
+.currency-selectors {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.swap-icon {
+    margin-top: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 20%;
+    transition: background-color 0.5s ease;
+}
+
+.swap-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.convert-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background: rgba(241, 241, 241, 0.2);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.convert-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.result {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    min-height: 2rem;
+}
+
+.ticker {
+    background: rgb(140, 121, 237);
+    backdrop-filter: blur(5px);
+    padding: 0.75rem 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 20s linear infinite;
+}
+
+.rate {
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .converter-card {
+        padding: 2rem;
+    }
+
+    .currency-selectors {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .swap-icon {
+        margin: 0.5rem 0;
+        padding-top: 8%;
+
+    }
+}

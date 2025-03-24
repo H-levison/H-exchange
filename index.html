@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-exchange</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <h1>H-exchange</h1>
+    <h2>Your seamless currency converter</h2>
+    <div class="container">
+        <div class="converter-card">
+            
+            <div class="input-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+            </div>
+
+            <div class="currency-selectors">
+                <div class="select-group">
+                    <label for="fromCurrency">From</label>
+                    <select id="fromCurrency">
+                        <option value="USD">USD</option>
+                        <option value="NGN">NGN</option>
+                        <option value="RWF">RWF</option>
+                    </select>
+                </div>
+
+                <div class="swap-icon" onclick="swapCurrencies()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 4 16 16" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" id="Arrows-Exchange-2--Streamline-Tabler" height="24" width="24">
+                        <desc>Arrows Exchange 2 Streamline Icon: https://streamlinehq.com</desc>
+                        <path d="M10.625 6.25H1.875l2.5 -2.5" stroke-width="1"></path>
+                        <path d="M4.375 8.75h8.75l-2.5 2.5" stroke-width="1"></path>
+                    </svg>
+                </div>
+
+                <div class="select-group">
+                    <label for="toCurrency">To</label>
+                    <select id="toCurrency">
+                        <option value="RWF">RWF</option>
+                        <option value="USD">USD</option>
+                        <option value="NGN">NGN</option>
+                    </select>
+                </div>
+            </div>
+
+            <button onclick="convertCurrency()" class="convert-btn">Convert</button>
+
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+
+      <!-- Ticker with live rates -->
+      <div class="ticker">
+        <div class="ticker-content">
+            <span class="rate" id="usdRwf">USD/RWF: Loading...</span>
+            <span class="rate" id="ngnRwf">NGN/RWF: Loading...</span>
+            <span class="rate" id="usdNgn">USD/NGN: Loading...</span>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
