@@ -13,6 +13,7 @@ if not API_KEY:
     print("Error: API key not found in .env file.")
     exit()
 
+# Define API endpoints and assign them to variables
 BASE_URL = f"https://v6.exchangerate-api.com/v6/{API_KEY}"
 UR_URL = f"{BASE_URL}/pair/USD/RWF"
 UN_URL = f"{BASE_URL}/pair/USD/NGN"
@@ -47,6 +48,9 @@ def get_exchange_rates():
          # Write rates to a JSON file
         with open(json_file_path, 'w') as file:
             json.dump(rates, file)
+
+        print(f"Exchange rates saved to {json_file_path}")
+        
     else: 
         print(f"Error: Failed to fetch exchange rates. Status codes: {response_usd_rwf.status_code}, {response_usd_ngn.status_code}, {response_ngn_rwf.status_code}")
         exit()

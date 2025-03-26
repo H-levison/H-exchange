@@ -1,3 +1,4 @@
+/* Default Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/* Body Styling */
 body {
     background-color: white;
     color: white;
@@ -13,14 +15,17 @@ body {
     flex-direction: column;
 }
 
+/* Container Section */
 .container {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding-bottom: 40px;
+    padding-top: 30px;
 }
 
+/* Converter Card */
 .converter-card {
     background: rgb(140, 121, 237);
     backdrop-filter: blur(10px);
@@ -36,7 +41,7 @@ h1 {
     font-size: 60px;
     color: rgb(140, 121, 237);
     font-weight: bolder;
-    padding-top: 60px;
+    padding-top: 80px;
     text-align: center;
 }
 
@@ -44,10 +49,11 @@ h2 {
     font-size: 16px;
     color: #666666;
     font-weight: lighter;
-    padding-top: 10px;
+    padding-top: 5px;
     text-align: center;
 }
 
+/* Input Section */
 .input-group, .select-group {
     margin-bottom: 1.5rem;
 }
@@ -83,6 +89,7 @@ select option {
     color: white;
 }
 
+/* Currency-Selectors */
 .currency-selectors {
     display: flex;
     align-items: center;
@@ -90,6 +97,7 @@ select option {
     margin-bottom: 0.5rem;
 }
 
+/* Icon */
 .swap-icon {
     margin-top: 0.5rem;
     cursor: pointer;
@@ -125,6 +133,7 @@ select option {
     min-height: 2rem;
 }
 
+/* ticker */
 .ticker {
     background: rgb(140, 121, 237);
     backdrop-filter: blur(5px);
@@ -146,6 +155,53 @@ select option {
     margin: 0 2rem;
 }
 
+/* Contact Section */
+.contact-section {
+    color: rgb(140, 121, 237);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact-section h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.contact-section p {
+    font-size: 13px;
+    font-weight: lighter;
+    padding-bottom: 5px;
+    color:#666666;
+}
+
+/* View more link */
+.view-more-container {
+    text-align: center;
+}
+
+.view-more-link {
+    color: rgb(140, 121, 237);
+    text-decoration: none;
+    display: inline-flex;
+    padding-bottom: 60px;
+    transition: color 0.3s ease-in-out;
+}
+
+.view-more-link span {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Mouse hover effect for view more link */
+.view-more-link:hover {
+    color: #666666;
+}
+
+/* Mouse hover effect for view more arrow */
+.view-more-link:hover span {
+    transform: translateX(5px);
+}
+
 @keyframes ticker {
     0% {
         transform: translateX(100%);
@@ -155,6 +211,7 @@ select option {
     }
 }
 
+/* Responsive container */
 @media (max-width: 768px) {
     .converter-card {
         padding: 2rem;

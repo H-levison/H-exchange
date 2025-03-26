@@ -7,6 +7,8 @@
 
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./styles/styles.css">
+
+<!-- Main Section -->
 </head>
 <body>
     <h1>H-exchange</h1>
@@ -18,7 +20,7 @@
                 <label for="amount">Amount</label>
                 <input type="number" id="amount" placeholder="Enter amount">
             </div>
-
+            <!-- Currency-selectors -->
             <div class="currency-selectors">
                 <div class="select-group">
                     <label for="fromCurrency">From</label>
@@ -28,7 +30,8 @@
                         <option value="RWF">RWF</option>
                     </select>
                 </div>
-
+                
+                <!--Swap Icon-->
                 <div class="swap-icon" onclick="swapCurrencies()">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 4 16 16" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" id="Arrows-Exchange-2--Streamline-Tabler" height="24" width="24">
                         <desc>Arrows Exchange 2 Streamline Icon: https://streamlinehq.com</desc>
@@ -53,6 +56,14 @@
         </div>
     </div>
 
+        <!-- Contact Section -->
+    <div class="contact-section">
+        <h3>Need to Convert Money?</h3>
+        <p>Send me a Message via Whatsapp!</p>
+        <a href="https://wa.me/+2348167568143" target="_blank" class="view-more-link"><span>&rarr;</span>
+        </a>
+    </div>
+
       <!-- Ticker with live rates -->
       <div class="ticker">
         <div class="ticker-content">
@@ -61,7 +72,8 @@
             <span class="rate" id="usdNgn">USD/NGN: Loading...</span>
         </div>
     </div>
-
+    
+ <!-- Script Section -->
     <script src="./scripts/script.js"></script>
 </body>
 </html>
