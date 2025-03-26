@@ -4,7 +4,7 @@ H-Exchange is a seamless currency converter web application that provides real-t
 
 ## Demo
 Link to Webapp: [H-exchange](https://exchange.honourgod.tech/)
-Link to Demo Video: [Watch the demo on YouTube](www.youtube.com)
+Link to Demo Video: [Watch the demo on YouTube](https://youtu.be/xDoMSmrQ1d4)
   
 ## Features
 - Real-time currency conversion
@@ -149,12 +149,11 @@ H-Exchange uses [ExchangeAPI](https://app.exchangerate-api.com/) to fetch real-t
 [ExchangeAPI Documentation](https://www.exchangerate-api.com/docs/overview)
 
   
+## Note
+/*This software was built to be used by Nigerians living in Rwanda and Rwandans living in Nigeria*/
 
 ## Contributing
 
   
 
 Feel free to fork the repo, create a feature branch, and submit a pull request!
-
-
-
